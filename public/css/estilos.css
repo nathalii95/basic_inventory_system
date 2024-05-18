@@ -1,0 +1,34 @@
+/* 
+   @media print {
+
+   @page{
+    size: A4;
+    margin: 0mm ;
+    orphans: 0!important;
+    widows: 0!important;
+}
+} */
+
+#myDiv{
+    display: none;
+}
+@media print {
+   .example-screen {
+       display: none;
+    }
+    #myDiv {
+       display: block;
+    }
+
+    @page{
+        size: A4;
+        margin: 0mm ;
+        orphans: 0!important;
+        widows: 0!important;
+    }
+}
+
+.countAlert {
+    float:right;
+    font-size: 150px;
+}
